@@ -2,69 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <!-- <script src="script.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <script type="text/javascript" src="app.js"></script> -->
-  
-    <!-- update the version number as needed -->
-    <!-- <script defer src="/__/firebase/4.6.2/firebase-app.js"></script> -->
-    <!-- include only the Firebase features as you need -->
-    <!-- <script defer src="/__/firebase/4.6.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.6.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.6.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.6.2/firebase-storage.js"></script> -->
-    <!-- initialize the SDK after all desired features are loaded -->
-    <!-- <script defer src="/__/firebase/init.js"></script> -->
-
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
-    
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-database.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </head>
  <body>
-	<div class="backgroundImage">
+	<div id="backgroundImage">
 	</div>
-	<div class="title">
+	<div class="title" id="muse">
 		<h1 class="name">MUSE.</h1>
-	</div>
-	<div class="options">
+  </div>
+  <!-- test -->
+  <pre id="object"></pre>
+	<div class="options" id="options">
 		<div style="border-bottom: 1px solid black">
-			<h2>CREATE A ROOM</h2>
+			<h2 id="create">CREATE A ROOM</h2>
 		</div>
 		<div>
-			<h2>JOIN A ROOM</h2>
+			<h2 id="join">JOIN A ROOM</h2>
 		</div>
-	</div>
-</body>
-
-<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script> -->
-<script>
-  // Initialize Firebase
-  // TODO: Replace with your project's customized code snippet
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD_SU5wyRObYdOGrlGKevIkVHuIQ2qvw1k",
-    authDomain: "hackwestern-75904.firebaseapp.com",
-    databaseURL: "https://hackwestern-75904.firebaseio.com",
-    projectId: "hackwestern-75904",
-    storageBucket: "hackwestern-75904.appspot.com",
-    messagingSenderId: "790927679169"
-  };
-  firebase.initializeApp(config);
-
-  //get element
-  const preObject = document.getElementById('object');
-  
-    //create references
-    const dbRefObject = firebase.database().ref().child('object');
-  
-    //sync object changes
-    dbRefObject.on('value', snap => console.log(snap.val()));
-
-
-</script>
-
+  </div>
+ </body>
 </html>
