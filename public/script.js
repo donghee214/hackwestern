@@ -39,6 +39,10 @@ var searchSong = function(){
 	document.getElementsByClassName('addSongButton')[0].addEventListener('click', searchFunction)
 }
 
+// var returnResults(songName){
+	
+// }
+
 var searchFunction = function(){
 	var title = document.getElementById('muse');
 	title.innerHTML = "Search Results For";
@@ -46,8 +50,10 @@ var searchFunction = function(){
 	document.getElementById('body').appendChild(searchBar);
 	document.getElementsByClassName('searchBar')[0].addEventListener("animationend", destroyFunction);
 	document.getElementsByClassName('searchBar')[0].style.WebkitAnimation = "hideSearchBar 0.35s 1";
-
+	returnResults(document.getElementsByClassName('searchBar')[0].value);
 }
+
+
 
 
 
