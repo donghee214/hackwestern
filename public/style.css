@@ -21,24 +21,73 @@
 }
 
 @-webkit-keyframes translateTop {
-    from {transform:translate3d(0, 0, 0)}
-    from {transform:translate3d(0, 200px, 0)}
+    from {top: 35vh; font-size: 50px;}
+    from {top: -20px; font-size: 30px;}
 }
 
 @keyframes translateTop {
-    from {transform:translate3d(0, 0, 0); font-size: 50px;}
-    from {transform:translate3d(-36vw, -38.5vh, 0); font-size: 30px;}
+    from {top: 35vh; font-size: 50px;}
+    from {top: -20px; font-size: 30px;}
 }
 
 @-webkit-keyframes translateTopTitleCreate {
-    from {transform:translate3d(0, 0, 0);}
-    from {transform:translate3d(-19.5vw, -55vh, 0);}
+    from {top: 66vh;}
+    from {top: 40px;}
 }
 
 @keyframes translateTopTitleCreate{
-    from {transform:translate3d(0, 0, 0);}
-    from {transform:translate3d(-19.5vw, -55vh, 0);}
+    from {top: 66vh;}
+    from {top: 40px;}
 }
+
+@-webkit-keyframes translateTopTitleCreate{
+    from {top: 66vh;}
+    from {top: 40px;}
+}
+
+@keyframes translateIdToBottom{
+    from {transform: translate3d(0, 0, 0)}
+    from {transform: translate3d(0, 400px, 0)}
+}
+
+@-webkit-keyframes translateIdToBottom{
+    from {transform: translate3d(0, 0, 0)}
+    from {transform: translate3d(0, 400px, 0)}
+}
+
+@keyframes reducePadding{
+    from {padding: 20px 0px 20px 5px;}
+    from {padding: 7px 0px 7px 5px;}
+}
+
+
+@keyframes showSearchBar{
+    from {transform: translate3d(0, 0, 0)}
+    from {transform: translate3d(0, 400px, 0)}
+}
+
+@-webkit-keyframes showSearchBar{
+    from {transform: translate3d(0, -40vw, 0)}
+    from {transform: translate3d(0, 0, 0)}
+}
+
+@keyframes showSearchBar{
+    from {transform: translate3d(0, -40vw, 0)}
+    from {transform: translate3d(0, 0, 0)}
+}
+
+@-webkit-keyframes hideSearchBar{
+    from {transform: translate3d(0, 0, 0)}
+    from {transform: translate3d(0, 40vw, 0)}
+}
+
+@keyframes hideSearchBar{
+    from {transform: translate3d(0, 0, 0)}
+    from {transform: translate3d(0, 40vw, 0)}
+}
+
+
+
 
 
 
@@ -59,12 +108,13 @@ html{
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    max-height: 100vh;
-    max-width: 100vw;
+    max-height: calc(100vh - 65px);
+    max-width: calc(100vw);
     position: absolute;
     top: 0;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: calc(100vh - 65px);
+    min-width: calc(100vw);
+ /*    margin-top: 65px; */
 }
 
 .title{
@@ -85,14 +135,15 @@ h2{
 	font-weight: 300;
 	color: #333333;
 	font-size: 30px;
+	margin: 10px 0 10px 0;
 }
 
 body{
-    max-height: 100vh;
-    max-width: 100vw;
+    max-height: calc(100vw);
+    max-width: calc(100vh - 65px);
     margin: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: calc(100vw);
+    min-height: calc(100vh - 65px);
     position: absolute;
     top: 0;
     left: 0;
@@ -112,7 +163,6 @@ body{
 	position: absolute;
     height: 50vh;
     /* left: 0; */
-    top: 0;
     width: 100vw;
     background-position: center top;
     background-repeat: no-repeat;
@@ -131,7 +181,7 @@ body{
 	-webkit-animation-fill-mode: forwards  !important;/* Safari 4.0 - 8.0 */
     animation-fill-mode: forwards !important;
     position: absolute;
-    top: 13vh;
+    top:80vh;
     width: 80vw;
     text-align: center;
 	left: calc(50% - 40vw);
@@ -139,9 +189,10 @@ body{
 
 #create{
 	position: absolute;
-	top: 0vh;
+	 top: 66vh;
 	    width: 80vw;
 	    text-align: center;
+	margin-top: 10px;
 	left: calc(50% - 40vw);
 	animation-direction: reverse !important;
 	animation-timing-function: ease-in-out !important ;
@@ -152,7 +203,7 @@ body{
 #roomId{
 	position: absolute;
 	z-index: -1;
-	top: calc(6.5vh - 20px);
+	bottom: 8vh;
     width: 70vw;
    	text-align: center;
 	left: calc(50% - 35vw);
@@ -163,10 +214,11 @@ body{
 }
 
 .options{
-	height: 40vh;
+	height: calc(100vh - 65px);
 	width: 100vw;
 	left: 0;
-	top: 60vh;
+	top: 0;
+/* 	top: 60vh; */
 	position: absolute;
 /* 	display: flex;
 	justify-content: center;
@@ -175,11 +227,62 @@ body{
 
 }
 
+.joinCode{
+	font-size: 20px;
+	color: #23CF5F;
+	font-family: 'Open sans';
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
 #label{
 	opacity: 0;
 }
 
+.continueButton{
+	width: 150px;
+    height: 150px;
+    background-image: url('continue.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 20vh;
+    background-position: center;
+}
 
+.continueGreen{
+	background-image: url('continueGreen.svg')
+}
+
+.addSongButton{
+    background-image: url('add.svg');
+    background-position: center;
+    background-size: 60%;
+    border-radius: 50%;
+    background-color: #23CF5F;
+    position: absolute;
+    width: 70px;
+    background-repeat: no-repeat;
+    height: 70px;
+    right: 6vw;
+    top: 60vh;
+    z-index: 2;
+}
+
+.searchBar{
+    top: 60vh;
+    position: absolute;
+    z-index: 1;
+    width: 65vw;
+    right: 23vw;
+    transform: translate3d(40vw, 0, 0);
+    animation-direction: reverse !important;
+	animation-timing-function: ease-in-out !important ;
+	-webkit-animation-fill-mode: forwards  !important;/* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards !important;
+}
 
 
 
@@ -210,7 +313,12 @@ input 				{
   display:block;
   width:100%;
   border:none;
+  text-align: center;
   border-bottom:1px solid #757575;
+  	animation-direction: reverse !important;
+	animation-timing-function: ease-in-out !important ;
+	-webkit-animation-fill-mode: forwards  !important;/* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards !important;
 }
 input:focus 		{ outline:none; }
 
@@ -222,18 +330,23 @@ label 				 {
   position:absolute;
   font-family: 'Open sans';
   pointer-events:none;
-  left:5px;
-  top:10px;
+  text-align: center;
+  left: 23.5%;
+  top: 20px;
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
+  	animation-direction: reverse !important;
+	animation-timing-function: ease-in-out !important ;
+	-webkit-animation-fill-mode: forwards  !important;/* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards !important;
 }
 
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
   top:-20px;
-  font-size:14px;
-  color:#5264AE;
+  font-size:25px;
+  color:#23CF5F;
 }
 
 /* BOTTOM BARS ================================= */
@@ -244,7 +357,7 @@ input:focus ~ label, input:valid ~ label 		{
   width:0;
   bottom:1px; 
   position:absolute;
-  background:#5264AE; 
+  background:#23CF5F; 
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -281,14 +394,14 @@ input:focus ~ .highlight {
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#23CF5F; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#23CF5F; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#23CF5F; }
   to 	{ width:0; background:transparent; }
 }
