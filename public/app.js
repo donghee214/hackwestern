@@ -28,9 +28,9 @@
     var newSongKey = firebase.database().ref().child('songs/'+ songId).set(songData)
   }
 
-  writeSongData("1234","No peace", "sam smith","thrill of it all", "abcd",20 );
-  writeSongData("1235","Burning", "sam smith","thrill of it all", "cdef",22 );
-  writeSongData("1236","Dusk till Dawn", "ZAYN","ABCD", "atsgsd",21 );
+  writeSongData("1234","No peace", "Sam Smith","Thrill of it all", "abcd",20 );
+  writeSongData("1235","Burning", "Sam Smith","Thrill of it all", "cdef",22 );
+  writeSongData("1236","Dusk till Dawn", "ZAYN","Single", "atsgsd",21 );
   writeSongData("1237","Therapy", "Khalid","American Teen", "atsgsfsdf",16 );
 
   //Read Top Songs

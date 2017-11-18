@@ -53,10 +53,6 @@ var searchFunction = function(){
 	returnResults(document.getElementsByClassName('searchBar')[0].value);
 }
 
-
-
-
-
 options.addEventListener('click', function(e){
 	if (e.target.id == "create"){
 		document.getElementById('join').addEventListener("animationend", destroyFunction);
