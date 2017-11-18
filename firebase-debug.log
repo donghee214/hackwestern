@@ -1,0 +1,28 @@
+[debug] [2017-11-18T19:08:02.898Z] ----------------------------------------------------------------------
+[debug] [2017-11-18T19:08:02.901Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dania\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-11-18T19:08:02.902Z] CLI Version:   3.15.2
+[debug] [2017-11-18T19:08:02.902Z] Platform:      win32
+[debug] [2017-11-18T19:08:02.902Z] Node Version:  v6.10.3
+[debug] [2017-11-18T19:08:02.902Z] Time:          Sat Nov 18 2017 14:08:02 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-18T19:08:02.902Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-18T19:08:02.914Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-18T19:08:02.914Z] > authorizing via signed-in user
+[debug] [2017-11-18T19:08:02.917Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/musique-79bbb  
+ Sat Nov 18 2017 14:08:02 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-18T19:08:03.315Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-18T19:08:03.317Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/musique-79bbb/tokens  
+ Sat Nov 18 2017 14:08:03 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-18T19:08:03.692Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\musique'...
+[info] 
+[debug] [2017-11-18T19:08:03.698Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/musique-79bbb  
+ Sat Nov 18 2017 14:08:03 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-18T19:08:04.413Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-18T19:08:04.415Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/915472544803/clients/_:getWebAppConfig  
+ Sat Nov 18 2017 14:08:04 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-18T19:08:04.817Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

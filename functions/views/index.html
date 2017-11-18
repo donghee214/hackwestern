@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <!-- <script src="script.js"></script> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-database.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.6.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.6.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.6.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.6.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.6.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="script.js"></script>
+
+
+
+  </head>
+ <body id="body">
+	<div id="backgroundImage">
+	</div>
+
+	<div class="title">
+		<h1 class="name" id="muse">MUSE.</h1>
+	</div>
+    <a href="/login">
+           login
+    </a>
+
+<!-- 	<div class="title" id="muse">
+		<h1 class="name">MUSE.</h1>
+  </div> -->
+  <!-- test -->
+  <pre id="object"></pre>
+
+	<div class="options" id="options">
+		<div>
+			<h2 id="create">CREATE A ROOM</h2>
+		</div>
+        <form id="roomId">
+            <div class="group">      
+              <input id="input1" type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label id="label">ROOM CODE</label>
+            </div>
+        </form>
+		<div>
+			<h2 id="join">JOIN A ROOM</h2>
+		</div>
+  </div>
+ </body>
+</html>

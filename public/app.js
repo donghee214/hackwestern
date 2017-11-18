@@ -1,4 +1,5 @@
   // Initialize Firebase
+
   var config = {
     apiKey: "AIzaSyD_SU5wyRObYdOGrlGKevIkVHuIQ2qvw1k",
     authDomain: "hackwestern-75904.firebaseapp.com",
@@ -7,7 +8,11 @@
     storageBucket: "hackwestern-75904.appspot.com",
     messagingSenderId: "790927679169"
   };
-  
+
+
+
+ 
+
   firebase.initializeApp(config);
 
   var rootRef = firebase.database().ref().child('songs');
@@ -78,4 +83,49 @@
   //upVote('1237');
 
 
- 
+// var generateRandomString = function(length) {
+//   var text = '';
+//   var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+//   for (var i = 0; i < length; i++) {
+//     text += possible.charAt(Math.floor(Math.random() * possible.length));
+//   }
+//   return text;
+// };
+
+// var stateKey = 'spotify_auth_state';
+// app.use(express.static(__dirname + '/views')).use(cookieParser());
+//  Endpoint to greet and add a new visitor to database.
+// * Send a POST request to localhost:3000/api/visitors with body
+// * {
+// *   "name": "Bob"
+// * }
+
+// app.post("/api/visitors", function (request, response) {
+//   var userName = request.body.name;
+//   if(!mydb) {
+//     console.log("No database.");
+//     response.send("Hello " + userName + "!");
+//     return;
+//   }
+//   // insert the username as a document
+//   mydb.insert({ "name" : userName }, function(err, body, header) {
+//     if (err) {
+//       return console.log('[mydb.insert] ', err.message);
+//     }
+//     response.send("Hello " + userName + "! I added you to the database.");
+//   });
+// });
+
+/**
+ * Endpoint to get a JSON array of all the visitors in the database
+ * REST API example:
+ * <code>
+ * GET http://localhost:3000/api/visitors
+ * </code>
+ *
+ * Response:
+ * [ "Bob", "Jane" ]
+ * @return An array of all the visitor names
+ */
+
