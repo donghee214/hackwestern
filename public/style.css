@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+html{
+	margin:  0;
+	padding:  0;
+	background-color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+}
+
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	font-family: 'Open sans';
+	font-weight: 700;
+	color: black;
+	font-size: 5em;
+}
+
+h2{
+	font-family: 'Open sans';
+	font-weight: 300;
+	color: #333333;
+	font-size: 3em;
+}
+
+.name{
+	position: absolute;
+	top: 35%;
+	color: black;
+}
+.backgroundImage{
+    position: absolute;
+    height: 50%;
+    top: 0;
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-image: url('homeBackground.jpeg');
+}
+
+.options{
+	height: 40%;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
