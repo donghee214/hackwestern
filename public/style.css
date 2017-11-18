@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+.translateUp{
+	transform: translate3d(0, -200px, 0)
+}
+
+.translateDown{
+	transform: translate3d(0, 200px, 0)
+}
+
+.translateTop{
+
+}
+
 html{
 	margin:  0;
 	padding:  0;
@@ -38,7 +50,8 @@ body{
 	top: 35%;
 	color: black;
 }
-.backgroundImage{
+
+#backgroundImage{
 	position: absolute;
     height: 50%;
     /* left: 0; */
@@ -48,6 +61,11 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 	background-image: url('homeBackground.jpeg');
+	transition: transform 0.3s ease-in-out;
+}
+
+#join{
+	transition: transform 0.3s ease-in-out;
 }
 
 .options{
@@ -59,4 +77,5 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
 }
